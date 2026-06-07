@@ -4,7 +4,7 @@ import pytest
 
 torch = pytest.importorskip("torch")
 
-from src.models import (
+from src.models import (  # noqa: E402
     TextCNN,
     BiGRUClassifier,
     SingleHeadAttentionClassifier,

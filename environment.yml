@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - python=3.11.15
+  - ipykernel
   - pip
   - pip:
       - numpy==2.0.2

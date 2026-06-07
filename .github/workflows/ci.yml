@@ -19,7 +19,9 @@ jobs:
       - name: Install test dependencies (CPU only)
         run: |
           python -m pip install --upgrade pip
-          # CPU-only torch so model tests can run on the runner
+          # Lightweight CI environment for linting and unit tests only.
+          # Full experiment reproduction uses environment.yml.
+          # CPU-only torch lets model tests run on the runner.
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install numpy pandas scikit-learn scipy matplotlib pytest ruff
 

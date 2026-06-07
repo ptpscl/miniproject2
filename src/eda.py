@@ -6,8 +6,6 @@ inside Jupyter; it is imported defensively so the module also imports
 cleanly in a plain Python / CI context.
 """
 
-import pandas as pd
-
 try:  # display exists in IPython/Jupyter; fall back to print elsewhere.
     from IPython.display import display
 except Exception:  # pragma: no cover
